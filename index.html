@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pacman Game </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="wdith-device-width,initial-scale=1.0">
+    <meta name="description" content="Pacman Fan Site">
+    <link href="css/Style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/fittext"></script>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <ol>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#high_scores">HIGH SCORES</a></li>
+        <li><a href="#how_to_play">HOW TO PLAY</a></li>
+        <li><a href="#players">PLAYERS</a></li>
+    </ol>
+</nav>
+</header>
+
+<main>
+    <section>
+
+        <img src="assets/Pac_man_logo.png" alt="logo">
+
+        <img class= "animation1" src="assets/chasing.png" alt="chasing">
+
+        <h2 class="insert-coins">INSERT COINS</h2>
+
+
+    </section>
+
+    <section>
+
+        <h1 id="high_scores">READY!</h1>
+        <h2>THE 10 BEST PLAYERS</h2>
+        
+        <div class="flex-container">
+        <div class="text-rank">
+        <p class="rank">RANK</p>
+        <p class="rank">1st</p>
+        <p class="rank">2nd</p>
+        <p class="rank">3rd</p>
+        <p class="rank">4th</p>
+        <p class="rank">5th</p>
+        <p class="rank">6th</p>
+        <p class="rank">7th</p>
+        <p class="rank">8th</p>
+        <p class="rank">9th</p>
+        <p class="rank">10th</p>
+        </div>
+
+        <div class="text-score">
+        <p class="score">SCORES</p>
+        <p class="score">10,000</p>
+        <p class="score">9,950</p>
+        <p class="score">9,000</p>
+        <p class="score">8,750</p>
+        <p class="score">8,500</p>
+        <p class="score">7,750</p>
+        <p class="score">7,250</p>
+        <p class="score">6,850</p>
+        <p class="score">6,500</p>
+        <p class="score">6.250</p>
+        </div>
+
+        <div class="text-initials">
+        <p class="initials">INITIALS</p>
+        <p class="initials">JRB</p>
+        <p class="initials">LAB</p>
+        <p class="initials">CJB</p>
+        <p class="initials">KED</p>
+        <p class="initials">JBB</p>
+        <p class="initials">SBB</p>
+        <p class="initials">MLB</p>
+        <p class="initials">AGD</p>
+        <p class="initials">KAD</p>
+        <p class="initials">BOB</p>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <img id="how_to_play" class= "animation2" src="assets/chasing2.png" alt="chasing2">
+
+        <h2>HOW TO PLAY</h2>
+        <h3>SIMPLY SCORE AS MANY POINTS AS YOU</h4>
+        <h4>can eating the small dots all around</h4>
+        <h4>the maze. 10 points per dot (240 of</h4>
+        <h4>them) Big points come when you eat 1</h4>
+        <h4>of the 4 Big flashing dots called</h4>
+        <h4>Energizers worth 50 points located in</h4>
+        <h4>each corner of the maze.</h4>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <h4 id="players">PLAYERS</h4>
+        <h4>CHARACTER / NICKNAME</h4>
+
+        <div class="flex-container2">
+            <div class="blinky">
+            <img class="blinky" src="assets/Blinky.png">
+            <p class="blinky">-SHADOW</p>
+            <p class="blinky">BLINKY</p>
+            </div>
+    
+            <div class="pinky">
+            <img class="pinky" src="assets/Pinky.png">
+            <p class="pinky">-SPEEDY</p>
+            <p class="pinky">PINKY</p>
+            </div>
+    
+            <div class="inky">
+            <img  class="inky" src="assets/Inky.png">
+            <p class="inky">-BASHFUL</p>
+            <p class="inky">INKY</p>
+            </div>
+
+            <div class="clyde">
+            <img class="clyde" src="assets/Clyde.png">
+            <p class="clyde">-POKEY</p>
+            <p class="clyde">CLYDE</p>
+            </div>
+        </div>
+
+        <div class="flex-container3">
+            <h4>200 PTS</h4>
+            <img src="assets/Eaten3.png">
+          </div>
+        
+        <div class="flex-container4">
+            <h4>50 PTS</h4>
+            <div class="yellow-box">
+            </div>
+          </div>
+        
+        <div class="flex-container5">
+            <h4>10 PTS</h4>
+            <div class="yellow-dot">               
+            </div>
+          </div>
+  
+
+</main>
+
+<footer>
+       <h5>THIS SITE HAS NO AFFIKIATION WITH THE ACTUAL PACMAN GAME</h5>
+</footer>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+    $(".insert-coins").fitText({
+           minFontSize: 14,
+           maxFontSize: 36
+      });
+    });
+        
+    $(document).ready(function() {
+        $("h1").fitText({
+           minFontSize: 14,
+           maxFontSize: 36
+      });
+    });
+
+    $(document).ready(function() {
+        $("h2").fitText({
+           minFontSize: 12,
+           maxFontSize: 32
+      });
+    });
+
+    $(document).ready(function() {
+        $("h3").fitText({
+           minFontSize: 12,
+           maxFontSize: 32
+      });
+    });
+
+    $(document).ready(function() {
+        $("h4").fitText({
+           minFontSize: 12,
+           maxFontSize: 32
+      });
+    });
+
+    $(document).ready(function() {
+        $("h5").fitText({
+           minFontSize: 8,
+           maxFontSize: 12
+      });
+    });
+
+        
+      </script>
+
+</body>
+
+
+</html>
